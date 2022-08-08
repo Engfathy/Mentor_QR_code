@@ -1,0 +1,149 @@
+/* Globale rules */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+
+:root {
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Grayishblue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End globale rules */
+
+/* main content */
+.container {
+    background-color: white;
+    display: flex;
+    width: 25%;
+    height: 70%;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+
+.code {
+    height: 60%;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.code img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.info {
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.info p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--Grayishblue);
+}
+
+/* end main content */
+/* medai code */
+@media (max-width:380px) {
+    .container{
+        height: 70%;
+        width: 90%;
+    }
+    
+}
+
+@media (min-width: 381px) and (max-width: 500px) {
+    .container {
+        width: 70%;
+        height: 80%;
+    }
+    .code {
+        margin-bottom: 15px;
+    }
+    .info h1 {
+        line-height: 1.4;
+    }
+    .info p {
+        line-height: 1.4;
+    }
+    
+}
+@media (min-width: 501px) and (max-width: 800px) {
+    .container {
+        width: 50%;
+        height: 80%;
+    }
+    .info h1 {
+        font-size: 25px;
+        line-height: 1.6;
+    }
+    .info p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    
+}
+@media (min-width: 1100px) {
+   
+    .code {
+        margin-bottom: 15px;
+    }
+    .info h1 {
+        line-height: 1.4;
+    }
+    .info p {
+        line-height: 1.4;
+    }
+    
+}
+@media (min-width: 801px) and (max-width:1099px) {
+    .container {
+        width: 30%;
+    }
+   
+    .code {
+        margin-bottom: 15px;
+    }
+    .info h1 {
+        line-height: 1.4;
+    }
+    .info p {
+        line-height: 1.4;
+    }
+    
+}
+/* end media code */
